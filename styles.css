@@ -33,7 +33,7 @@ header img {
     align-items: center;
     display: flex;
     justify-content: center;
-    height: 90%;
+    height: 80%;
 }
 
 /* TABELA */
@@ -70,6 +70,26 @@ header img {
 
 .cell:not(:empty) {
     pointer-events: none;
+}
+
+footer {
+    align-items: center;
+    color: #FFF;
+    display: flex;
+    gap: 8px;
+    height: 10%;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+footer a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #fa006e;
+    text-decoration: underline;
 }
 
 /* MODAL */
