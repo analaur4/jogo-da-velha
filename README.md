@@ -22,6 +22,6 @@ O usuário deve ser capaz de:
 - Desktop-first
 - Javascript
 
-## Autor
+## Autora
 
 - GitHub - [analaur4](https://www.github.com/analaur4)
