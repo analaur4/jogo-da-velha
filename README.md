@@ -20,6 +20,7 @@ O usuário deve ser capaz de:
 - Propriedades personalizadas do CSS
 - Flexbox
 - Desktop-first
+- Javascript
 
 ## Author
 
