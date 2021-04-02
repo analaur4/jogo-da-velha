@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="shortcut icon" href="./images/jogo-da-velha.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Jogo da Velha</h1>
+        <img src="./images/jogo-da-velha.svg" alt="Icon Jogo da Velha">
+    </header>
+    
+    <div class="game-body">
+        <table class="board">
+            <tr class="row">
+                <td class="cell"></td>
+                <td class="cell"></td>
+                <td class="cell"></td>
+            </tr>
+
+            <tr class="row">
+                <td class="cell"></td>
+                <td class="cell"></td>
+                <td class="cell"></td>
+            </tr>
+
+            <tr class="row">
+                <td class="cell"></td>
+                <td class="cell"></td>
+                <td class="cell"></td>
+            </tr>
+        </table>
+
+        <dialog class="game-over-modal">
+            <h3>GAME OVER</h3>
+            <p class="game-over-message"></p>
+            <button class="restart-button">Reiniciar</button>
+        </dialog>
+    </div>
+
+</body>
+</html>

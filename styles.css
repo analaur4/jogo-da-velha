@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+
+header {
+    align-items: center;
+    display: flex;
+    gap: 30px;
+    height: 10%;
+    justify-content: center;
+}
+
+header h1 {
+    color: #FFF;
+    font-size: 50px;
+    text-shadow: #00000080 2px 2px 3px;
+    text-transform: uppercase;
+}
+
+header img {
+    width: 50px;
+}
+
+.game-body {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 90%;
+}
+
+/* TABELA */
+.board {
+    font-size: 100px;
+    font-weight: bold;
+    height: 500px;
+    text-align: center;
+    width: 500px;
+}
+
+.cell {
+    border: 1px dashed #FFFFFF69;
+    border-radius: 8px;
+    color: #FFF;
+    height: calc(100% / 3);
+    text-shadow: #00000080 2px 2px 3px;
+    transition: background-color .3s;
+    width: calc(100% / 3);
+}
+
+.cell:hover {
+    background-color: #e994e2c9;
+}
+
+.cell:hover::after {
+    content: var(--current-player, "X");
+    opacity: .4;
+}
+
+.cell:empty {
+    cursor: pointer;
+}
+
+.cell:not(:empty) {
+    pointer-events: none;
+}
+
+/* MODAL */
+.game-over-modal {
+    border: none;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, .4) 2px 2px 5px;
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+    width: 300px;
+}
+
+.game-over-modal h3 {
+    color: #0075ff;
+    margin: 20px 0;
+}
+
+.game-over-message {
+    margin: 35px 0;
+}
+
+.game-over-modal .restart-button {
+    background-color: #fa006e;
+    border: none;
+    border-radius: 8px;
+    color: #FFF;
+    cursor: pointer;
+    outline: none;
+    padding: 16px 32px;
+    text-transform: uppercase;
+}
+
+.game-over-modal .restart-button:hover {
+    opacity: .8;
+} 
+
+@media screen and (max-width: 900px) {
+    header h1 {
+        font-size: 36px;
+    }
+
+    header img {
+        width: 35px;
+    }
+
+    .board {
+        height: 350px;
+        width: 350px;
+    }
+
+    .cell:hover::after {
+        content: '';
+        opacity: .4;
+    }
+}
