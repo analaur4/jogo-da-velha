@@ -10,7 +10,7 @@ O usuário deve ser capaz de:
 
 ## Links
 
-- URL da Solução: [Netfly](https://challenge-html-css-card-columns.netlify.app/)
+- URL da Solução: [Jogo da Velha](https://challenge-html-css-card-columns.netlify.app/)
 
 ## Meu Processo
 
